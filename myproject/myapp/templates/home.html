@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contratos Inteligentes</title>
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Proyecto de Contratos Inteligentes</h1>
+    <p>¡Bienvenido a nuestra plataforma de contratos inteligentes!</p>
+    <a href="#about" class="btn">Acerca de</a>
+  </header>
+  
+  <section id="about">
+    <h2>Acerca de Nosotros</h2>
+    <p>Somos un equipo apasionado por la tecnología blockchain y los contratos inteligentes. Nuestra plataforma permite a los usuarios acceder y participar en una variedad de contratos inteligentes de manera segura y eficiente.</p>
+    <a href="#signup" class="btn">Regístrate</a>
+  </section>
+  
+  <section id="signup">
+    <h2>Regístrate para Empezar</h2>
+    <form action="signup.php" method="POST">
+      <input type="email" name="email" placeholder="Correo Electrónico" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <button type="submit" class="btn">Registrarse</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 Proyecto de Contratos Inteligentes</p>
+  </footer>
+</body>
+</html>
