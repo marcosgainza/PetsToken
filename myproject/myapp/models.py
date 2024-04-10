@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser 
 from django.contrib.auth.forms import UserCreationForm
 
 class Mascota(models.Model):
@@ -11,9 +11,6 @@ class Mascota(models.Model):
 
     def __str__(self):
         return self.nombre
-
-from django.contrib.auth.models import AbstractUser
-from django.db import models
 
 class CustomUser(AbstractUser):
     # Otros campos personalizados
@@ -28,3 +25,9 @@ class SignUpForm(UserCreationForm):
     class Meta:
         model = CustomUser  # Reemplaza CustomUser por tu modelo de usuario si es necesario
         fields = ('username', 'email', 'password1', 'password2')  # Campos requeridos para el registro
+        
+
+class User(models.Model):
+    username = models.CharField(max_length=100)
+    email = models.EmailField()
+    password = models.CharField(max_length=100)

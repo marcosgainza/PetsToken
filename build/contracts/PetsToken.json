@@ -21959,7 +21959,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-03-05T20:49:04.285Z",
+  "updatedAt": "2024-04-09T20:12:15.011Z",
   "devdoc": {
     "errors": {
       "ERC721EnumerableForbiddenBatchMint()": [
